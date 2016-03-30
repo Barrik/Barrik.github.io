@@ -1,0 +1,159 @@
+body {
+  /*background-image: "../img/fireworks.jpg"*/
+  background-color: #F6F6F6;
+}
+.navbar-brand {
+  font-family: 'Ubuntu', sans-serif !important;
+  color: #2e42d1 !important;
+  font-weight: 700 !important;
+}
+@media (min-width: 768px) {
+  .navbar-nav {
+    padding-top: 10px;
+  }
+  .expanded-brand {
+    color: #2e42d1 !important;
+    font-size: 56px;
+  }
+  .navbar-default {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -440.508px;
+    text-align: center;
+    background-color: transparent;
+    border: none;
+  }
+  .navLink a {
+    font-family: 'Alegreya Sans', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    color: #2e42d1 !important;
+    border-radius: 5px;
+    margin: 0px 12px;
+  }
+  .navLink a:hover {
+    background-color: #eee !important;
+  }
+  .active a {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    background-color: transparent !important;
+    border-bottom: solid 2px #2e42d1;
+  }
+} /*EXPANDED ONLY*/
+
+@media (max-width: 767px) {
+  .collapsed-brand {
+    display: block !important;
+    font-size: 22px !important;
+  }
+  .expanded-brand {
+    display: none !important;
+  }
+  .navLink a {
+    font-family: 'Alegreya Sans', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    color: #2e42d1 !important;
+    border-radius: 5px;
+    margin: 0px 10px;
+  }
+  .navbar-default {
+    border: none;
+    background-color: transparent;
+  }
+} /*COLLAPSED ONLY*/
+
+.collapsed-brand {
+  display: none;
+}
+.content {
+  margin-top: 200px;
+}
+.title{
+  font-family: 'Ubuntu', sans-serif;
+  color: #2e42d1;
+  font-size: 42px;
+  margin-top: 0px;
+  padding-top: 0px;
+}
+h3.title {
+  font-family: 'Ubuntu', sans-serif;
+  color: #000;
+  font-size: 34px;
+}
+.title a {
+  color: #2e42d1;
+}
+.title a:hover {
+  text-decoration: none;
+  color: #d1bd2e
+}
+.title a:active, .title a:focus {
+  text-decoration: none;
+}
+.intro {
+  position: relative;
+  margin-bottom: 75px;
+}
+.intro p {
+  margin-top: 25px;
+  font-family: 'Alegreya Sans', sans-serif;
+  font-size: 22px;
+  padding-bottom: 50px;
+  border-bottom: 1px solid blue;
+}
+.section {
+  margin-top: 80px;
+  padding-bottom: 50px;
+  border-bottom: 1px solid blue;
+}
+.short {
+  height: 500px;
+}
+.siteThumbnail {
+  border: 1px solid rgba(100, 100, 100, 0.2);
+}
+.tempThumbnail {
+  width: 384px;
+  height: 216px;
+  background-color: green;
+}
+.caption {
+  padding-top: 37px;
+  font-family: 'Alegreya Sans', sans-serif;
+  font-size: 22px;
+  text-align: justify;
+}
+.caption a {
+  float: right;
+  color: #2e42d1;
+}
+.caption a:hover {
+  text-decoration: none;
+  color: #d1bd2e;
+}
+.caption a:focus {
+  text-decoration: none;
+}
+.tall {
+  height: 100vh;
+}
+.sidebar {
+  position: relative;
+}
+.sidebar-fixed {
+  position: fixed;
+  right: 0;
+  top: 30px;
+}
+.test {
+  height: 1200px;
+  background-color: blue;
+}
+@media (max-width: 768px) {
+  .sidebar {
+    display: none;
+  }
+}
