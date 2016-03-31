@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
   <link href='https://fonts.googleapis.com/css?family=Ubuntu:400,500,700|Alegreya+Sans:400,500' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -38,26 +39,54 @@
       </div><!-- /.container-fluid -->
     </nav>
 
-    <!--<div class="container header">
-      <ul class="nav nav-pills navbar-default navbar-fixed-top">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Work</a></li>
-        <a class="navbar-brand" href="#">Adam Schwartz</a>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </div>-->
+    <div class="jumbotron">
+      <div class="container">
+        <!-- <h1>Adam Schwartz</h1> -->
+        <h1><b>Always looking forward.</b></h1>
+        <div class="goDown"><h2><b>Look with me</b></h2><a href="#homeContent" class="smooth-scroll"><i class="fa fa-chevron-down"></i></a></div>
+        <!-- <a href="#" class="goDown"><h2>Look with me.</h2><br><i class="fa fa-chevron-down"></i></a> -->
+      </div>
+    </div> <!--END JUMBOTRON-->
+
+    <div class="container" id="homeContent">
+      <div class="row section">
+        <div class="col-sm-4">
+          <h3 class="title"><a href="sites.html">See my work</a></h3>
+          <img src="img/pet-store.png" alt="pet store site" class="img-responsive siteThumbnail">
+        </div>
+        <div class="col-sm-8 caption">
+          <p>I work hard to constantly learn new technologies to incorporate into my work.  It's a never ending process that takes a lot of effort, but it shows.  As I learn new things, my sites look better, and work better.  Have a look at the progress I've made so far.</p>
+          <a href="sites.html" class="button">Check it out</a>
+        </div>
+      </div>
+
+      <div class="row section">
+        <div class="col-sm-4">
+          <h3 class="title title-compressed"><a href="about.html">Learn about me</a></h3>
+          <img src="img/bootcamp-1.png" alt="about me" class="img-responsive siteThumbnail">
+        </div>
+        <div class="col-sm-8 caption">
+          <p>I'm more than just a coder.  I have hobbies, interests, and shortcomings.  I have a family, friends, and people I care deeply about.  Mostly though, I needed a fourth page to have a symmetrical navbar.</p>
+          <a href="about.html" class="button">Check it out</a>
+        </div>
+      </div>
+
+      <div class="row section">
+        <div class="col-sm-4">
+          <h3 class="title"><a href="contact.html">Contact Me</a></h3>
+          <img src="img/contact_me.jpg" alt="contact me" class="img-responsive siteThumbnail">
+        </div>
+        <div class="col-sm-8 caption">
+          <p>Like what you see?  Interested in working with me?  Do you have any questions?  Do you just want to hang out?  Email me.  Call me.  Text me.  Send me a letter.  Hit me up on Twitter.  I'm always happy to talk.</p>
+          <a href="contact.html" class="button">Find out how</a>
+        </div>
+      </div>
+    </div>
 
     <footer>
       <div class="social">
-        <a href="https://twitter.com/Psomaster226" title="Check me out on Twitter!" target="_blank"><i class="fa fa-twitter"></i></a>
-        <a href="mailto:barrik226@gmail.com" title="Email me!" target="_blank"><i class="fa fa-envelope"></i></a>
+        <a href="https://twitter.com/Psomaster226" title="Check me out on Twitter!" target="_blank"><i class="media fa fa-twitter"></i></a>
+        <a href="mailto:barrik226@gmail.com" title="Email me!" target="_blank"><i class="media fa fa-envelope"></i></a>
       </div>
         <p class="copyright">Site by | Adam Schwartz, 2016</p>
     </footer>
@@ -89,6 +118,24 @@
           }
       });
     }
+  </script>
+  <script>
+        $(function() {
+            $('a[href*=#]:not([href=#])').click(function() {
+                  	if( $(this).hasClass("smooth-scroll")) {
+                    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+                            var target = $(this.hash);
+                            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+                            if (target.length) {
+                                    $('html,body').animate({
+                                            scrollTop: target.offset().top
+                                    }, 1000);
+                                    return false;
+                            }
+                    }
+                }
+            });
+        });
   </script>
 </body>
 </html>
