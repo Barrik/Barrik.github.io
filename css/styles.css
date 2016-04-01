@@ -179,6 +179,50 @@ a.linkInText {
   font-size: 30px;
 }
 
+/*BEGIN CONTACT*/
+
+#contact {
+  margin-top: 200px;
+}
+#contact .title {
+  font-size: 54px;
+}
+.noBullets {
+  list-style: none;
+}
+#contact .contactInfo {
+  font-family: 'Alegreya Sans', sans-serif;
+  font-weight: 500;
+  font-size: 35px;
+}
+#contact .icons {
+  position: absolute;
+}
+#contact .fa-twitter {
+  background-color: transparent;
+}
+#contact a {
+  color: #000;
+  transition:color 0.2s linear 0s;
+}
+#contact a:hover {
+  text-decoration: none;
+  color: #2e42d1;
+}
+.maps {
+  position: relative;
+  padding-bottom: inherit; // This is the aspect ratio
+  height: 0;
+  overflow: hidden;
+}
+.google-maps iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+}
+
 /*BEGIN FOOTER*/
 
 footer {
@@ -276,6 +320,13 @@ footer {
 } /*NAVBAR FIX*/
 
 @media (max-width: 767px) {
+  .leftPadding {
+    padding-left: 10px;
+    /*padding-right: -20px;*/
+  }
+  .noPadding {
+    padding-right: 0px;
+  }
   .collapsed-brand {
     display: block !important;
     font-size: 22px !important;
@@ -295,8 +346,14 @@ footer {
     border: none;
     background-color: transparent;
   }
+  .navbar-header {
+    margin-right: 0px !important;
+  }
   .navbar-collapse {
     margin-bottom: 50px;
+  }
+  button.navbar-toggle-collapsed {
+    margin-right: 0px;
   }
   .jumbotron {
     margin-top: -70px;
